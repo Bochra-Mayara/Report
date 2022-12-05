@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: blue;
+        }
+
+        h1 {
+            color: green;
+        }
+
+        .h1 {
+            color: blue;
+        }
+
+        #h2 {
+            color: yellow;
+        }
+
+        ol li [start="2"] {
+            color: blueviolet;
+        }
+
+        li:nth-child(1) {
+            color: orange;
+        }
+
+        li[title^="sel"] {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>texte [1]</h1>
+    <ul>
+        <li>texte [2]</li>
+        <li>texte [3]</li>
+    </ul>
+    <h2 id="h2" title="selection">texte [4]</h2>
+
+    <ul>
+        <li>texte [5]</li>
+        <li class="h1" title="selecteur">texte [6]
+            <ol start="2">
+                <li>texte [7]</li>
+
+            </ol>
+        </li>
+    </ul>
+
+</body>
+
+</html>
